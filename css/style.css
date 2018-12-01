@@ -76,6 +76,7 @@ header {
   color: #ffffff;
   letter-spacing: 0.61px;
   margin: 10px 0 0 0;
+  font-size: 37px;
 }
 
 .offer p {
@@ -131,6 +132,7 @@ header {
   color: #363635;
   font-weight: 700;
   letter-spacing: 0.61px;
+  font-size: 25px;
 }
 
 .offer-block p {
@@ -173,6 +175,10 @@ header {
 .menu {
   margin-right: 10px;
   padding-left: 0;
+}
+  /* УТП */
+.offer h3 {
+  font-size: 34px;
 }
 }
 
@@ -250,14 +256,23 @@ header {
           transform: rotate(-45deg);
 }
 }
-
+  /* УТП */
+.offer {
+  margin-top: 100px;
+}
+.offer h3 {
+  font-size: 30px;
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   /* Главное меню */
 .menu li {
   margin-left: 0;
 }
-
+  /* УТП */
+.offer  {
+  margin-top: 65px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -266,6 +281,14 @@ header {
 .logo {
   margin-left: 20px;
 }
+  /* УТП */
+.offer h3 {
+  font-size: 25px;
+}
+.offer p {
+  margin-top: 30px;
+  font-size: 14px;
+}
 }
 
 /* Custom, iPhone Retina */
@@ -273,5 +296,16 @@ header {
   /* Главное меню */
 .logo {
   margin-left: 10px;
+}
+  /* УТП */
+.offer {
+  margin-top: 40px;
+}
+.offer h3 {
+  font-size: 18px;
+}
+.offer p {
+  margin-top: 20px;
+  font-size: 12px;
 }
 }
