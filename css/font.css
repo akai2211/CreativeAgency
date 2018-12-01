@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Bernadette';
+  src: url('../fonts/Bernadette/Bernadette.woff') format('woff'),
+       url('../fonts/Bernadette/Bernadette.ttf') format('truetype'),
+       url('../fonts/Bernadette/Bernadette.svg#Bernadette') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bernadette';
+  src: url('../fonts/Bernadette/bernadette.eot');
+  src: url('../fonts/Bernadette/bernadette.woff2') format('woff2'),
+       url('../fonts/Bernadette/bernadette.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

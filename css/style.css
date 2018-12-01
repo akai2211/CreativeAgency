@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  min-height: 1095px;
+  min-height: 1126px;
   background-color: #aa9a92;
   background: url(../img/bg-header.png) no-repeat top center;
 }
@@ -67,8 +67,12 @@ header {
   margin: 160px 0 0 0;
 }
 
-.offer img {
-  max-width: 100%;
+.offer h1 {
+  font-family: 'Bernadette';
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -1.85px;
 }
 
 .offer h3 {
@@ -145,7 +149,7 @@ header {
 
 }
 
-.offer-block a {
+.btn-gradient {
   display: inline-block;
   color: #ffffff;
   font-weight: bold;
@@ -158,14 +162,75 @@ header {
   box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
   border-radius: 30px;
   transition: 0.2s;
-  position: absolute;
-  bottom: -20px;
-  left: 100px;
+  position: relative;
+  bottom: 20px;
 }
 
-.offer-block a:hover {
+.btn-gradient:hover {
   color: #c7c7c7;
-  
+  text-decoration: none;
+}
+
+/* Секция с большой буквой А */
+
+.big-a {
+  height: 518px;
+  background: url(../img/big-a-bg.png) no-repeat center;
+  margin-top: 120px;
+}
+
+.big-a-text {
+  max-width: 400px;
+}
+
+.big-a-text h2 {
+  font-family: "Bernadette";
+  font-size: 50px;
+  letter-spacing: -1.58px;
+}
+
+.big-a-text p {
+  font-size: 18px;
+  color: #0c0c0c;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  margin: 30px 0 0px 0;
+}
+
+.big-a-text > .btn-gradient {
+  margin-top: 45px;
+}
+
+.big-a-text-author {
+  max-width: 400px;
+  position: relative;
+  margin: 70px 0 0 90px;
+}
+
+.big-a-text-author img {
+  position: absolute;
+  top: -45px;
+  left: -102px;
+  max-width: 100%;
+}
+
+.big-a-text-author p {
+  color: #0c0c0c;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+  font-weight: 600;
+}
+
+.big-a-text-author h3 {
+  font-family: "Bernadette";
+  font-size: 48px;
+  color: #363636;
+  letter-spacing: -1.58px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -177,9 +242,21 @@ header {
   padding-left: 0;
 }
   /* УТП */
+.offer h1 {
+  font-size: 95px;
+}
 .offer h3 {
   font-size: 34px;
 }
+  /* offer block */
+.offer-block {
+  height: 394px;
+}
+  /* Секция с большой буквой А */
+  .big-a {
+    background-size: 300px;
+    background-position: 53% 85%;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -255,14 +332,36 @@ header {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-}
   /* УТП */
 .offer {
   margin-top: 100px;
 }
+.offer h1 {
+  font-size: 91px;
+}
 .offer h3 {
   font-size: 30px;
 }
+  /* offer block */
+.offer-block {
+  height: 415px;
+  margin-bottom: 45px;
+}
+  /* Секция с большой буквой А */
+.big-a {
+  background: none;
+  margin-top: 30px;
+}
+.big-a-text-author {
+  margin: 70px 0 0 50px;
+}
+.big-a-text-author img {
+  width: 61px;
+  top: -28px;
+  left: -68px;
+}
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   /* Главное меню */
@@ -273,6 +372,33 @@ header {
 .offer  {
   margin-top: 65px;
 }
+.offer h1 {
+  font-size: 70px;
+}
+  /* offer block */
+.offer-block {
+  max-width: 372px;
+  height: 439px;
+  bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  /* Секция с большой буквой А */
+.big-a {
+  margin-top: 10px;
+}
+.big-a-text h2 {
+  font-size: 45px;
+}
+.big-a-text p {
+  font-size: 16px;
+}
+.big-a-text-author h3 {
+  font-size: 44px;
+}
+.big-a-text-author {
+  margin: 70px 0 0 58px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -282,12 +408,36 @@ header {
   margin-left: 20px;
 }
   /* УТП */
+.offer h1 {
+  font-size: 48px;
+}
 .offer h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
 .offer p {
   margin-top: 30px;
   font-size: 14px;
+}
+  /* Секция с большой буквой А */
+.big-a-text h2 {
+  font-size: 35px;
+}
+.big-a-text p {
+  font-size: 16px;
+}
+.big-a-text-author {
+  margin: 70px 0 0 55px;
+}
+.big-a-text-author img {
+  max-width: 45px;
+  left: -57px;
+  top: -14px;
+}
+.big-a-text-author p {
+  font-size: 16px;
+}
+.big-a-text-author h3 {
+  font-size: 40px;
 }
 }
 
@@ -307,5 +457,17 @@ header {
 .offer p {
   margin-top: 20px;
   font-size: 12px;
+}
+  /* Секция с большой буквой А */
+.big-a-text-author {
+  margin: 70px 0 0 0px;
+}
+.big-a-text-author img {
+  top: -30px;
+  left: 0;
+  max-width: 33px;
+}
+.big-a-text-author h3 {
+  font-size: 40px;
 }
 }
