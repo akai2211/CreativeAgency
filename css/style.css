@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 10000px;
+}
+
+header {
+  min-height: 1095px;
+  background-color: #aa9a92;
+  background: url(../img/bg-header.png) no-repeat top center;
+}
+
+/* Главное меню */
+.logo {
+  margin: 25px 0 0 55px;
+}
+
+.humburger {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  text-align: right;
+  margin: 45px 65px 0 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #c7c7c7;
+}
+
+.active {
+  display: block !important;
+}
+
+/* УТП */
+
+.offer {
+  text-align: center;
+  margin: 160px 0 0 0;
+}
+
+.offer img {
+  max-width: 100%;
+}
+
+.offer h3 {
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.61px;
+  margin: 10px 0 0 0;
+}
+
+.offer p {
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 40px 0 0 0;
+}
+
+.offer a {
+  display: inline-block;
+  color: #090909;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  padding: 10px 25px;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+  margin: 40px 0 0 0;
+  transition: 0.2s;
+  border: 1px solid #fff;
+}
+
+.offer a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* offer blocks */
+
+.offer-blocks {
+  margin: 90px 0 0 0;
+}
+
+.offer-block {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  position: relative;
+  background-color: #ffffff;
+  height: 426px;
+}
+
+.offer-block img {
+  max-width: 100%;
+}
+
+.offer-block h3 {
+  margin: 27px 0 0 0;
+  color: #363635;
+  font-weight: 700;
+  letter-spacing: 0.61px;
+}
+
+.offer-block p {
+  margin: 30px auto 45px auto;
+  color: #0c0c0c;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  max-width: 256px;
+
+}
+
+.offer-block a {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #c88043 0%, #465296 100%);
+  text-decoration: none;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+  transition: 0.2s;
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+}
+
+.offer-block a:hover {
+  color: #c7c7c7;
+  
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  /* Главное меню */
+.menu {
+  margin-right: 10px;
+  padding-left: 0;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  /* Главное меню */
+.menu {
+  display: none;
+}
+.menu a {
+  padding: 10px;
+}
+.menu a:hover {
+  background-color: #fff;
+  color: #090909;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+}
+.humburger {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.humburger span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -15px;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+}
+.humburger span::before, .humburger span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -18px;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+}
+.humburger span::before, .humburger span::after {
+  content: '';
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.humburger span::before {
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+.humburger span::after {
+  -webkit-transform: translateY(9px);
+      -ms-transform: translateY(9px);
+          transform: translateY(9px);
+}
+.hum-active span {
+  height: 0;
+}
+.hum-active span::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.hum-active span::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  /* Главное меню */
+.menu li {
+  margin-left: 0;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  /* Главное меню */
+.logo {
+  margin-left: 20px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* Главное меню */
+.logo {
+  margin-left: 10px;
+}
+}
