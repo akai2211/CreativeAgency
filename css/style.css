@@ -326,12 +326,12 @@ header {
   padding: 25px 20px;
 }
 
-table {
+.services-block table {
   border-collapse: collapse;
   border: 1px solid transparent;
 }
 
-td {
+.services-block td {
   border: 1px dashed #c7c7c7;
 }
 
@@ -355,6 +355,68 @@ td {
 
 .services-icon a:hover {
   color: #c7c7c7;
+}
+
+/* Team */
+
+.team-text {
+  text-align: center;
+}
+
+.team-text h2 {
+  margin-top: 100px;
+  font-family: "Bernadette";
+  color: #363636;
+  font-size: 50px;
+  letter-spacing: -1.58px;
+}
+
+.team-text p {
+  margin-top: 45px;
+  color: #343434;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+}
+
+.team-face-blocks {
+  margin-top: 160px;
+  background-color: #eee;
+  max-height: 250px;
+  text-align: center;
+}
+
+.team-face-block {
+  position: relative;
+  top: -100px;
+  display: inline-block;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.team-face-block:first-child {
+  margin-left: 0;
+}
+
+.team-face-block img {
+  max-width: 170px;
+}
+
+.team-face-block h3 {
+  margin-top: 30px;
+  color: #363635;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.61px;
+}
+
+.team-face-block p {
+  margin-top: -15px;
+  color: #a2a2a2;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -391,6 +453,10 @@ td {
   /* Services */
 .services {
   background-position-x: 190.8%;
+}
+  /* Team */
+.team-face-block {
+  margin-left: 15px;
 }
 }
 
@@ -519,6 +585,16 @@ td {
 .services {
   background-image: none;
 }
+  /* Team */
+.team-text h2 {
+  margin-top: 80px;
+}
+.team-text p {
+  font-size: 16px;
+}
+.team-face-block {
+  margin-left: 20px;
+}
 
 }
 
@@ -594,6 +670,10 @@ td {
 .services-block {
   margin: 35px 0 35px 0;
 }
+  /* Team */
+.team-face-blocks {
+  background-color: #ffffff;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -665,6 +745,29 @@ td {
   .services-icon a {
     font-size: 15px;
   }
+  /* Team */
+.team-text h2 {
+  font-size: 36px;
+  margin-top: 55px;
+}
+.team-text p {
+  line-height: 1.5;
+  margin-top: 30px;
+}
+.team-face-block {
+  margin-left: 10px;
+}
+.team-face-block img {
+  max-width: 130px;
+}
+.team-face-block h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.team-face-block p {
+  margin-top: -10px;
+  font-size: 14px;
+}
 }
 
 /* Custom, iPhone Retina */
