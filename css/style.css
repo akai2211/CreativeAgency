@@ -171,25 +171,25 @@ header {
   text-decoration: none;
 }
 
-/* Секция с большой буквой А */
+/* About Us */
 
-.big-a {
+.about {
   height: 518px;
-  background: url(../img/big-a-bg.png) no-repeat center;
+  background: url(../img/about-bg.png) no-repeat center;
   margin-top: 120px;
 }
 
-.big-a-text {
+.about-text {
   max-width: 400px;
 }
 
-.big-a-text h2 {
+.about-text h2 {
   font-family: "Bernadette";
   font-size: 50px;
   letter-spacing: -1.58px;
 }
 
-.big-a-text p {
+.about-text p {
   font-size: 18px;
   color: #0c0c0c;
   font-weight: 400;
@@ -197,24 +197,24 @@ header {
   margin: 30px 0 0px 0;
 }
 
-.big-a-text > .btn-gradient {
+.about-text > .btn-gradient {
   margin-top: 45px;
 }
 
-.big-a-text-author {
+.about-text-author {
   max-width: 400px;
   position: relative;
   margin: 70px 0 0 90px;
 }
 
-.big-a-text-author img {
+.about-text-author img {
   position: absolute;
   top: -45px;
   left: -102px;
   max-width: 100%;
 }
 
-.big-a-text-author p {
+.about-text-author p {
   color: #0c0c0c;
   font-size: 18px;
   font-style: italic;
@@ -223,7 +223,7 @@ header {
   font-weight: 600;
 }
 
-.big-a-text-author h3 {
+.about-text-author h3 {
   font-family: "Bernadette";
   font-size: 48px;
   color: #363636;
@@ -232,6 +232,58 @@ header {
   text-align: center;
   margin-top: 40px;
 }
+
+/* Features */
+
+.features {
+  height: 719px;
+}
+
+.features-imgs-bg {
+  background: url(../img/af-img-1.png) 0% 0% no-repeat,
+              url(../img/af-img-2.png) 100% 0% no-repeat,
+              url(../img/af-img-3.png) 0% 100% no-repeat,
+              url(../img/af-img-4.png) 100% 100% no-repeat;
+  background-size: 49%;
+  height: 719px;
+  margin-top: 120px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.features-block {
+  background-color: #fff;
+  max-width: 727px;
+  max-height: 377px;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  text-align: center;
+  padding: 35px;
+}
+
+.features-block h2 {
+  font-family: "Bernadette";
+  color: #363636;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: -1.58px;
+}
+
+.features-block p {
+  color: #0c0c0c;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.features-block > .btn-gradient {
+  margin-top: 40px;
+}
+
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -252,11 +304,18 @@ header {
 .offer-block {
   height: 394px;
 }
-  /* Секция с большой буквой А */
-  .big-a {
-    background-size: 300px;
-    background-position: 53% 85%;
-  }
+  /* About Us */
+.about {
+  background-size: 300px;
+  background-position: 53% 85%;
+}
+  /* Features */
+.features {
+  height: 602px;
+}
+.features-imgs-bg {
+  height: 602px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -347,19 +406,40 @@ header {
   height: 415px;
   margin-bottom: 45px;
 }
-  /* Секция с большой буквой А */
-.big-a {
+  /* About Us */
+.about {
   background: none;
   margin-top: 30px;
 }
-.big-a-text-author {
+.about-text-author {
   margin: 70px 0 0 50px;
 }
-.big-a-text-author img {
+.about-text-author img {
   width: 61px;
   top: -28px;
   left: -68px;
 }
+.about-text-author p {
+  line-height: 1.5;
+}
+  /* Features */
+.features {
+  height: 448px;
+}
+.features-imgs-bg {
+  height: 448px;
+}
+.features-block {
+  max-width: 555px;
+}
+.features-block h2 {
+  font-size: 43px;
+}
+.features-block p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 }
 
 /* Small Devices, Tablets */
@@ -383,21 +463,41 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-  /* Секция с большой буквой А */
-.big-a {
+  /* About Us */
+.about {
   margin-top: 10px;
+  height: 750px;
 }
-.big-a-text h2 {
+.about-text h2 {
   font-size: 45px;
 }
-.big-a-text p {
+.about-text p {
   font-size: 16px;
 }
-.big-a-text-author h3 {
+.about-text-author h3 {
   font-size: 44px;
 }
-.big-a-text-author {
+.about-text-author {
   margin: 70px 0 0 58px;
+}
+.about-text > .btn-gradient {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+  /* Features */
+.features-block {
+  max-height: 280px;
+  padding: 20px;
+}
+.features-block h2 {
+  font-size: 38px;
+}
+.features-block p {
+  font-size: 15px;
+}
+.features-block > .btn-gradient {
+  margin-top: 15px;
 }
 }
 
@@ -418,26 +518,40 @@ header {
   margin-top: 30px;
   font-size: 14px;
 }
-  /* Секция с большой буквой А */
-.big-a-text h2 {
+  /* About Us */
+.about {
+  height: 815px;
+}
+.about-text h2 {
   font-size: 35px;
 }
-.big-a-text p {
+.about-text p {
   font-size: 16px;
 }
-.big-a-text-author {
+.about-text-author {
   margin: 70px 0 0 55px;
 }
-.big-a-text-author img {
+.about-text-author img {
   max-width: 45px;
   left: -57px;
   top: -14px;
 }
-.big-a-text-author p {
+.about-text-author p {
   font-size: 16px;
 }
-.big-a-text-author h3 {
+.about-text-author h3 {
   font-size: 40px;
+}
+/* Features */
+.features-block h2 {
+  font-size: 32px;
+}
+.features-block p {
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+.features-block > .btn-gradient {
+  margin-top: 25px;
 }
 }
 
@@ -458,16 +572,17 @@ header {
   margin-top: 20px;
   font-size: 12px;
 }
-  /* Секция с большой буквой А */
-.big-a-text-author {
+  /* About Us */
+.about-text-author {
   margin: 70px 0 0 0px;
 }
-.big-a-text-author img {
+.about-text-author img {
   top: -30px;
   left: 0;
   max-width: 33px;
 }
-.big-a-text-author h3 {
+.about-text-author h3 {
   font-size: 40px;
 }
+
 }
