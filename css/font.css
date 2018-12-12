@@ -16,3 +16,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MyriadPro-BlackCond';
+  src: url('../fonts/MyriadPro/MyriadPro-BlackCond.woff') format('woff'),
+       url('../fonts/MyriadPro/MyriadPro-BlackCond.ttf') format('truetype'),
+       url('../fonts/MyriadPro/MyriadPro-BlackCond.svg#Bernadette') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-BlackCond';
+  src: url('../fonts/MyriadPro/MyriadPro-BlackCond.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-BlackCond.woff2') format('woff2'),
+       url('../fonts/MyriadPro/MyriadPro-BlackCond.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
